@@ -11,6 +11,9 @@ on:
 
 jobs:
   build:
+    permissions:
+      id-token: write
+      contents: read
 
     runs-on: ubuntu-latest
 
@@ -29,3 +32,8 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
+    - name: Configure AWS credentials from Test Account
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::771082127534:role/aws-deployer-test
+        aws-region: us-east-1
