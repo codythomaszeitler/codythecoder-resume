@@ -5,9 +5,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 300vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex-container {
+  display : flex;
+  flex-direction: column;
+}
+
+.initial-image-height {
+  height : 100vh;
+}
+
+.programming-image-dimensions {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.8;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url(./Anton-Regular.ttf) format('truetype');
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.main-name {
+  color: white;
+  font-family: 'Anton';
+  font-size: 1000%;
+  text-shadow: 0 0 50px #000;
+  padding-right : 50px;
+  padding-left : 50px;
+}
+
+.programmer-title {
+  color: white;
+  font-family: 'Anton';
+  font-size: 250%;
+  text-shadow: 0 0 50px #000;
+  padding-right : 50px;
+  padding-left : 50px;
+  padding-top : 25px;
+  padding-bottom : 25px;
+}
+
+.upper-middle{
+  position: absolute;
+  top : 25%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.middle{
+  position: absolute;
+  top : 40%;
+  left : 50%;
+  transform : translate(-50%, -50%);
 }
