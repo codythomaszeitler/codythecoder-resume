@@ -2,7 +2,7 @@ import './App.css';
 
 import React from 'react';
 
-import programmingImage from './AdobeStock_194231483.jpeg';
+import programmingImage from './AdobeStock_423893595.jpeg';
 import { ImageWithText } from './ImageWithText';
 
 class App extends React.Component {

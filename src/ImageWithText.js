@@ -8,7 +8,7 @@ export class ImageWithText extends React.Component {
             <div className="flex-container container initial-image-height" >
                 <img src={this.props.image} alt="Programming" className='programming-image-dimensions'></img>
                 <p className="upper-middle main-name">{this.props.name}</p>
-                <p className="middle programmer-title">Programmer</p>
+                <p className="middle programmer-title">Software Developer</p>
             </div>
         );
     }
