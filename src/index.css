@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 300vh;
 }
 
 code {
@@ -32,8 +31,18 @@ code {
 }
 
 @font-face {
-  font-family: 'Anton';
-  src: url(./Anton-Regular.ttf) format('truetype');
+  font-family: 'RobotoMono-Thin';
+  src: url(./static/RobotoMono-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMono-Bold';
+  src: url(./static/RobotoMono-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMono-Regular';
+  src: url(./static/RobotoMono-Regular.ttf) format('truetype');
 }
 
 .container {
@@ -44,8 +53,8 @@ code {
 
 .main-name {
   color: white;
-  font-family: 'Anton';
-  font-size: 4vw;
+  font-family: 'RobotoMono-Bold';
+  font-size: 3.5vw;
   text-shadow: 2px 2px 50px #000;
   padding-right : 1vw;
   padding-left : 1vw;
@@ -56,7 +65,7 @@ code {
 
 .programmer-title {
   color: white;
-  font-family: 'Anton';
+  font-family: 'RobotoMono-Bold';
   font-size: 2.5vw;
   text-shadow: 0 0 50px #000;
   padding-right : 1.2vw;
@@ -78,4 +87,48 @@ code {
   top : 50%;
   left : 50%;
   transform : translate(-50%, -50%);
+}
+
+hr {
+  margin: 30px 0;
+  height: 1px;
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #6dbfb0));
+  width: .1;
+}
+
+.submodule-header {
+  font-family: 'RobotoMono-Thin';
+  font-size: large;
+  color: #6dbfb0;
+  text-align: center;
+}
+
+.submodule-bold {
+  font-family: 'RobotoMono-Bold';
+  font-size: medium;
+  color: #46615c;
+  text-align: center;
+}
+
+.submodule-text {
+  font-family: 'RobotoMono-Regular';
+  font-size: smaller;
+  color: #46615c;
+  text-align: center;
+}
+
+.bottom-footer-color {
+  background-color: #363e40;
+}
+
+.bottom-height {
+  height: 50vh;
+}
+
+.contact-information-text {
+  color: white;
+  text-align: center;
+  font-family: 'RobotoMono-Bold';
+  font-size: 2vw;
 }
