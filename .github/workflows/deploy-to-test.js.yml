@@ -31,4 +31,4 @@ jobs:
         role-to-assume: arn:aws:iam::771082127534:role/aws-deployer-test
         aws-region: us-east-1
     - name: Deploy to S3 test bucket
-      run: aws s3 sync ./build/ s3://codythecoder-resume-test
+      run: aws s3 sync --acl public-read ./build/ s3://codythecoder-resume-test 
