@@ -46,6 +46,18 @@ code {
   src: url(./static/RobotoMono-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'RobotoMono-Medium';
+  src: url(./static/RobotoMono-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMono-SemiBold';
+  src: url(./static/RobotoMono-SemiBold.ttf) format('truetype');
+}
+
+
+
 .container {
   position: relative;
   text-align: center;
@@ -114,7 +126,7 @@ hr {
 }
 
 .submodule-header {
-  font-family: 'RobotoMono-Thin';
+  font-family: 'RobotoMono-SemiBold';
   font-size: large;
   color: #6dbfb0;
   text-align: center;
