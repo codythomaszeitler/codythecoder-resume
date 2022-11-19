@@ -23,7 +23,7 @@ class App extends React.Component {
     window.removeEventListener('scroll', this.handleScrollEvent)
   }
 
-  handleScrollEvent = (event) => {
+  handleScrollEvent = () => {
     const windowHeight = window.innerHeight;
     const yAxis = window.scrollY;
     const calculatedOpacity = ( (windowHeight - yAxis)  / windowHeight);
