@@ -1,0 +1,21 @@
+
+
+So there are going to be two main elements that are in play here.
+
+The first element is the top of the page which houses the imge and the two text fields.
+
+The second element is everything else on the page.
+
+(I wonder how you can figure out if you need custom js or not)
+
+Whenever you scroll down on the page, two things should happen:
+1) First, the top imge must become more (clear? / opaque? don't remember the term)
+
+2) Second, the entire bottom portion of the website should start to move
+
+First, it seems that we need to set the position of the element to fixed.
+It should not be affected by the normal flow of the document. 
+It should just always stay at the top.
+
+
+https://stackoverflow.com/questions/2941189/how-to-overlay-one-div-over-another-div
