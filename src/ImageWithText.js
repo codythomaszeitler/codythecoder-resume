@@ -3,12 +3,6 @@ import React from "react";
 import Anime from "react-animejs-wrapper";
 
 export class ImageWithText extends React.Component {
-  alreadyRanAnimation;
-
-  componentDidMount() {
-    this.alreadyRanAnimation = true;
-  }
-
   render() {
     return (
       <div className="flex-container container initial-image-height">
@@ -17,7 +11,6 @@ export class ImageWithText extends React.Component {
           alt="Programming"
           className="programming-image-dimensions"
         ></img>
-        {!this.alreadyRanAnimation && (
           <div>
             <Anime
               className="upper-middle"
@@ -44,13 +37,6 @@ export class ImageWithText extends React.Component {
               <p className="programmer-title">Software Developer</p>
             </Anime>
           </div>
-        )}
-        {this.alreadyRanAnimation && (
-          <div>
-            <p className="upper-middle main-name">{this.props.name}</p>
-            <p className="middle programmer-title">Software Developer</p>
-          </div>
-        )}
       </div>
     );
   }
